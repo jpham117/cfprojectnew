@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  get 'welcome' => 'pages#home'
+  get 'pages/about'
+
+  get 'pages/contact'
+  
+  get 'pages/index'
+
+  root 'pages#home'
 end
