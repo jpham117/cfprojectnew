@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- Because CSS is cascading, we want to apply the styles from Bootstrap first, and then add any custom styles with our own CSS -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %> <!-- styles added in .scss files will automatically be applied to the application.css file, which acts like a "master" css file -->
+
+  <!-- We'll link our Bootstrap JavaScript file as well, after the javascript_include_tag because Bootstrap depends on jQuery which is loaded with all the other JavaScript -->
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- meta tag that will let your app react responsively on mobile phones -->
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
   <nav>
     <ul>
       <li>Home</li>
@@ -16,6 +24,8 @@
   </nav>
 
   <%= yield %>
+  
+ 
 
   <footer>
     &copy; 2017 Bike Berlin
