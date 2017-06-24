@@ -54,7 +54,7 @@ end
 
 # To ensure that it only compiles in the development or test environments.
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 
