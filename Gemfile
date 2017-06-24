@@ -45,3 +45,15 @@ group :development do
   gem 'spring'
 end
 
+# This gem is only needed for the Heroku server, so your app to query the database.
+group :production do
+  gem 'pg'
+end
+
+# To ensure that it only compiles in the development or test environments.
+group :development, :test do
+  gem 'sqlite3'
+end
+
+
+
