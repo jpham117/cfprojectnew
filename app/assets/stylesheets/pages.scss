@@ -10,38 +10,66 @@ h2 {
 }
 
 
-//    navbar
+/* Nav */
 
 .navbar {
-	background-color: #B00;
-	opacity: .75;
+	background-color: #c2c2a3;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
 }
 
-.navbar-default {
-	background-color: #B00;
+.navbar ul {
+	float: right;
 }
 
-ul {
-	padding-top: 0.1em;
-	padding-right: 1em;
+.navbar li {
+	display: inline-block;
+	}
+
+.navbar a {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #FFF; 
+	font-weight: 200;
+	}
+
+.navbar-header {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #FFF; 
+	font-weight: 200;
 }
 
-.navbar-default .navbar-nav li a {
-	font-size: 14px;
-	color: #FFF5EE;
+.projectName a {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #FFF; 
+	font-weight: 200;	
 }
 
-.navbar-default .navbar-nav li a:hover {
-	color: #000;
+.navbar a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
-h1 {
-	font-family: Raleway;
-	color: #0F0F0F;
+.dropdown-menu {
+	background-color: black;
 }
 
-.prod-list {
-	margin-left: 2em;
-	display: inline;
+/* Typography for Nav */
+
+.navbar ul li a { 
+	font-family: Futura, Helvetica, Arial, sans-serif;
 }
+
+.projectName a {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+.dropdown-menu a {
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
 
