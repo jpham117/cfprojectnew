@@ -8,3 +8,40 @@ h2 {
     color: green;
     text-align: center;
 }
+
+
+//    navbar
+
+.navbar {
+	background-color: #B00;
+	opacity: .75;
+}
+
+.navbar-default {
+	background-color: #B00;
+}
+
+ul {
+	padding-top: 0.1em;
+	padding-right: 1em;
+}
+
+.navbar-default .navbar-nav li a {
+	font-size: 14px;
+	color: #FFF5EE;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	color: #000;
+}
+
+h1 {
+	font-family: Raleway;
+	color: #0F0F0F;
+}
+
+.prod-list {
+	margin-left: 2em;
+	display: inline;
+}
+
