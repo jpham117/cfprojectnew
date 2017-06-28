@@ -13,15 +13,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- meta tag that will let your app react responsively on mobile phones -->
   <%= csrf_meta_tags %>
 </head>
+
 <body>
   
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
+  <nav class="nav navbar-default nav-cont">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "BikeBerlinLogo", root_path, class: "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	 			<ul class="nav navbar-nav">
+	 				<li class="active"><%= link_to "Home", root_path %></li>
+	 				<li><%= link_to "Products", products_path %></li>
+	 				<li><%= link_to "Orders", orders_path %></li>
+	 				<li><%= link_to "About", pages_about_path %></li>
+	 				<li><%= link_to "Contact", pages_contact_path %></li>
+	 			</ul>
+	 		</div>
+	  </div>
+	</nav>
+  
 
   <%= yield %>
   
