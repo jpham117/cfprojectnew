@@ -7,11 +7,9 @@
       <% @products.each do |product| %>
         <div class="col-sm-2 col-md-4">
           <p>
-            <strong>Name:</strong>
             <%= product.name %>
           </p>
           <p>
-            <strong>Image url:</strong>
             <%= image_tag(product.image_url, class: "img-responsive") %>
           </p>
           <p>
@@ -44,4 +42,4 @@
 
 <%= link_to 'New Product', new_product_path %>
 
-<%=@test_variable %>
+
