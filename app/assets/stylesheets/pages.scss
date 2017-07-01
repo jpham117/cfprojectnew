@@ -1,10 +1,10 @@
-.mainheading h1 {
+.h1 {
     font-family: arial;
     color: blue; 
     text-align: center;
 }
 
-.mainheading h2 {
+.h2 {
     color: green;
     text-align: center;
 }
@@ -16,12 +16,7 @@
 	background-color: #c2c2a3;
 	position: fixed;
 	width: 100%;
-	top: 0;
 	z-index: 1;
-}
-
-.mainheading {
-    top: 50px;
 }
 
 .navbar ul {
