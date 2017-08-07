@@ -1,5 +1,27 @@
-<h1>Contact Page</h1>
-    <p>Say Hello</p>
-        <li>Email: sales@bikeberlin.com</li>
-        <li>Phone: (800) 123-4567</li>
-    </p>
+<div class="container header">
+  <h1>Contact Us</h1>
+  <%= flash[:notice] %>
+
+    <%= form_tag("/pages/thank_you") do %>
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="form-group">
+          <%= label_tag :name %>
+          <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", required: "true"%>
+        </div><!--name-->
+        <div class="form-group">
+          <%= label_tag :email, "Email Address" %>
+          <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email Address", required: "true", type: "email" %>
+        </div><!--email-->
+        <div class="form-group">
+          <%= label_tag :message %>
+          <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", required: "true" %>
+
+          <button class="btn">
+          <%= submit_tag "Send" %>
+          </button>
+        <% end %>
+      </div><!--message-->
+    </div><!--div-->
+  </div><!--row-->
+</div><!--container header-->
