@@ -55,10 +55,13 @@
     
   </nav> <!-- end navbar --> 
   
-  <!-- This block will display a welcome message when you sign in -->
-  <p class="notice"><%=notice%></p>
-  <p class="alert"><%=alert%></p>
-  
+  <!-- Flash Notice Tags-->
+  <% if notice %>
+    <div id="notice" class="alert alert-success"><%= notice %></div>
+  <% end %>
+  <% if alert %>
+    <div id="alert" class="alert alert-danger"><%= alert %></div>
+  <% end %>
 
   <%= yield %> <!-- the yield tells the application where to render the view files inside the layout -->
   

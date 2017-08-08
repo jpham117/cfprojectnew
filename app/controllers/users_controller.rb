@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy] #the before_action :set_user is a method called a "callback."
+  before_filter :authenticate_user! # This line makes sure the user is signed in before trying to access the users_controller.
+  load_and_authorize_resource # This helper method will find the user & check their abilities to make sure they are authorized to perform that action. 
 
   # GET /users
   # GET /users.json

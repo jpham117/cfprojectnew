@@ -59,3 +59,6 @@ end
   
 # This gem provides you the ability to authenticate a user in your app using the register, sign in & out functions.
 gem 'devise'
+
+# This gem is an authorization library which resricts what resources a given user is allowed to access.
+gem 'cancancan', '~>1.10'
