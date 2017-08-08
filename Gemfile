@@ -56,6 +56,6 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
-
-
-
+  
+# This gem provides you the ability to authenticate a user in your app using the register, sign in & out functions.
+gem 'devise'
