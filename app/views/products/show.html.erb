@@ -25,11 +25,16 @@
   <%= @product.price %>
 </p>
 
-<%= @product.comment.rating_desc.first %>
+<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+<%= @product.comments.rating_desc.first %>
 <%= @product.highest_rating_comment %>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+
+<%= render 'new_comment' %>
+<%= render 'comments' %>
 
 
