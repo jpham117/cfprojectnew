@@ -62,3 +62,6 @@ gem 'devise'
 
 # This gem is an authorization library which resricts what resources a given user is allowed to access.
 gem 'cancancan', '~>1.10'
+
+# This gem will split review listings into multiple pages.
+gem 'will_paginate', '~> 3.1.0'
