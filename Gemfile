@@ -55,6 +55,7 @@ end
 # To ensure that it only compiles in the development or test environments.
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.6'
 end
   
 # This gem provides you the ability to authenticate a user in your app using the register, sign in & out functions.
