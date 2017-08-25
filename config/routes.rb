@@ -8,13 +8,13 @@ Rails.application.routes.draw do
   end
   resources :users
   
-  get 'pages/about'
+  get 'static_pages/about'
 
-  get 'pages/contact'
+  get 'static_pages/contact'
   
-  get 'pages/index'
+  get 'static_pages/index'
 
-  root 'pages#landing_page'
+  root 'static_pages#landing_page'
   
-  post 'pages/thank_you'
+  post 'static_pages/thank_you'
 end
