@@ -3,8 +3,8 @@ require 'rails_helper'  # To get access to the configuration we need to write RS
 describe Product do  # We add the describe block to tell RSpec which model we want to test. 
   context "when the product has comments" do
     before do
-      Product.create!(name: "race bike") 
-      User.create!(name: "usertest") 
+      Product.create!(name: "race bike")
+      User.create!(email: "test1@gmail.com", password: "testtest") 
       product.comments.create!(rating: 1, user: user, body: "Awful bike!")
       product.comments.create!(rating: 3, user: user, body: "Ok bike!")
       product.comments.create!(rating: 5, user: user, body: "Great bike!")

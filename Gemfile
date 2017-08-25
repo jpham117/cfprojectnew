@@ -66,3 +66,6 @@ gem 'cancancan', '~>1.10'
 
 # This gem will split review listings into multiple pages.
 gem 'will_paginate', '~> 3.1.0'
+
+# This gem provides the "assigns" and "assert_template" functions.
+gem 'rails-controller-testing'
