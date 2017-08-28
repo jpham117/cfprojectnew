@@ -56,6 +56,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails', '~>4.0'
 end
   
 # This gem provides you the ability to authenticate a user in your app using the register, sign in & out functions.
