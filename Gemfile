@@ -70,3 +70,6 @@ gem 'will_paginate', '~> 3.1.0'
 
 # This gem provides the "assigns" and "assert_template" functions.
 gem 'rails-controller-testing'
+
+# This gem used for payment processing from Stripe
+gem 'stripe'
