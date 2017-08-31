@@ -73,3 +73,6 @@ gem 'rails-controller-testing'
 
 # This gem used for payment processing from Stripe
 gem 'stripe'
+
+# This gem is security scanner
+gem 'brakeman'
