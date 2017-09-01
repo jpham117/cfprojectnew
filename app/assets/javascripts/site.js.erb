@@ -1,5 +1,5 @@
-<!-- Turbolinks speed up the page load time when traveling around the different pages of your Rails app -->
-$(document).on('turbolinks:load', function(){
+
+var refreshRating = function() {
   $('.rating').raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
@@ -16,8 +16,12 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+};
+
+<!-- Turbolinks speed up the page load time when traveling around the different pages of your Rails app -->
+$(document).on('turbolinks:load', function(){
+  refreshRating();
   
-  $('.img-zoom').elevateZoom();
- 
-  });
+  $(".img-zoom").elevateZoom();
+
 });

@@ -32,12 +32,7 @@
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
 
-
-<% if @product.comments.exists? %>
-  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-<% else %>
-  There are no reviews yet. 
-<% end %>
+<p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
 
 
