@@ -16,6 +16,7 @@ Rails.application.configure do
   # Enable/disable caching. By default caching is disabled.  To enable or disable caching, type "$ rails dev:cache" in terminal.
   if Rails.root.join('tmp/caching-dev.txt').exist? 
     config.action_controller.perform_caching = true
+  end
 
  
   # Don't care if the mailer can't send.
