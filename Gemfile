@@ -76,3 +76,7 @@ gem 'stripe'
 
 # This gem is security scanner
 gem 'brakeman'
+
+# This gem is used for Memcachier
+gem 'memcachier'
+gem 'dalli'
