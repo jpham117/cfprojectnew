@@ -19,9 +19,9 @@ var refreshRating = function() {
 };
 
 <!-- Turbolinks speed up the page load time when traveling around the different pages of your Rails app -->
-$(document).on('turbolinks:load', function(){
+$(document).on('turbolinks:load ajaxSuccess', function(){
   refreshRating();
   
-  $(".img-zoom").elevateZoom();
+  $('.img-zoom').elevateZoom();
 
 });
