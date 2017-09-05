@@ -7,36 +7,12 @@
 
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-   <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-
 <%= form_tag "/payments/create" do %>
   <%= hidden_field_tag(:product_id, @product.id) %>
   <%= render partial: "shared/stripe_checkout_button" %>
 <% end %>
 
 <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
-
-
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

@@ -78,5 +78,5 @@ gem 'stripe'
 gem 'brakeman'
 
 # This gem is used for Memcachier
-gem 'memcachier'
 gem 'dalli'
+gem 'memcachier'
