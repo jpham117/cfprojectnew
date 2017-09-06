@@ -80,3 +80,5 @@ gem 'brakeman'
 # This gem is used for Memcachier
 gem 'dalli'
 gem 'memcachier'
+
+gem 'redis-rails'
