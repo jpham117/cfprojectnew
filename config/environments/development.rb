@@ -47,4 +47,7 @@ Rails.application.configure do
   
   # For Devise install: Added to define default URL options in the development environment
   config.action_mailer.default_url_options = { :host => 'cfprojectnew-jpham117.c9users.io'}
+  
+  # This will tell the rails generator to generate plain JavaScript files instead of CoffeeScript files.
+  config.app_generators.javascript_engine = :javascript
 end
