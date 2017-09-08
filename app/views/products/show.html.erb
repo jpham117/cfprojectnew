@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="container">
+  <div class="row" data-product-id="<%= @product.id %>">
 
+<p>
   <strong>Name:</strong>
   <%= @product.name %>
-
 </p>
 
 <%= form_tag "/payments/create" do %>
@@ -25,4 +26,6 @@
 <%= render 'comments' %>
 
 <%= will_paginate @comments %>
+</div> <!-- end row -->
+</div> <!-- end container -->
 
