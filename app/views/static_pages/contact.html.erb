@@ -1,8 +1,8 @@
-<div class="container header">
+<div class="container" id="contactus">
   <h1>Contact Us</h1>
   <%= flash[:notice] %>
 
-    <%= form_tag("/pages/thank_you") do %>
+    <%= form_tag("/static_pages/thank_you") do %>
     <div class="row">
       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <div class="form-group">
@@ -16,7 +16,8 @@
         <div class="form-group">
           <%= label_tag :message %>
           <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", required: "true" %>
-
+          <br>
+          <br>
           <button class="btn">
           <%= submit_tag "Send" %>
           </button>
